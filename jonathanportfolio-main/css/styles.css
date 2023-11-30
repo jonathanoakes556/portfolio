@@ -1,0 +1,210 @@
+/* CSS Document */
+/*
+Author: <Your Name>
+Date: <Today’s Date>
+File Name: styles.css
+*/
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	
+}
+/* Style rules for body and images */
+
+body {
+    background-color: #efdb5b;
+}
+/* Style rule for the header */
+
+header{
+	position: static;
+	top: 0;
+	background-color: #fff;
+	
+
+}
+header img{
+	margin: 0 auto;
+	
+}
+img{
+	max-width: 100%;
+display: block;
+}
+/* style rules for mobile viewport */
+/* show mobile class, hide desktop tablet class */
+.mobile{
+	display: block;
+}
+.tablet-desktop{
+	display: none;
+}
+/* Style rules for navigation area */
+
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+	
+}
+nav ul{
+	list-style-type: none;
+text-align: center;
+}
+nav li:first-child{
+	border-top: none;
+}
+
+nav li{
+	
+font-size: 1.5em;
+	font-family: 'Fairplex Narrow OT Book';
+	border-top: 1px solid #fff;
+}
+
+nav li a{
+	display: block;
+color: #fff;
+text-align: center;
+padding: 0.5em 1em;
+text-decoration: none;
+}
+
+main{
+	clear: left;
+	background-color: #54cfd6;
+padding: 2%;
+font-size: 1.25em;
+	font-family:  'Fairplex Narrow OT Book', sans-serif;
+}
+main h1{
+	font-size: 1.25em;
+	font-family:  Amaranth, 'Amaranth Bold'
+}
+
+/* Style rules for footer content */
+
+footer{
+	background-color:#efdb5b;
+}
+footer p{
+	font-size: 0.75em;
+text-align: center;
+color: #fff;
+padding: 0 1em;
+font-family: 'Fairplex Narrow OT Book', sans-serif;
+}
+
+footer p a{
+	color: #fff;
+text-decoration: none;
+}
+.external-link{
+	color: #666600;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* media queary for tablet viewport */
+
+@media screen and (min-width: 630px), print{
+	/* toblet viewport: show tablet-desktop class, hide mobile class */
+	.tablet-desktop{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+	/*tablet viewport style rule for header*/
+	header{
+		position: static;
+		
+	}
+	
+	/*tablet viewport style rule for nav*/
+	nav li{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+		
+	}
+	
+	nav ul{
+		display: inline-block;
+		white-space: nowrap;
+	}
+	nav li a{
+		padding: 0.1em 0.75em;
+	}
+	/*tablet viewport style rule for main*/
+	main ul{
+		margin: 0 0 4% 10%;
+	}
+	
+}
+
+/*media query for desktop viewport */
+
+@media screen and (min-width: 1015px), print{
+	/*desktop viewport: style rule for header*/
+	
+	header{
+		width: 100%;
+		
+		float: left;
+		padding-bottom: 0;
+	}
+	/* desktop viewport: style rules for nav area */
+	nav{
+		
+		width: 100%;
+		margin: 4em 1em 0 0;
+		
+	}
+	nav ul{
+		text-align: center;
+		display: inline-block;
+		white-space: nowrap;
+		
+	}
+	nav li{
+		border: none;
+		text-align: center;
+		
+	}
+	nav li a{
+		padding: 0.5em 3em;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
+	}
+	nav li a:hover{
+		color: #000;
+		background-color: #54cfd6;
+	}
+	/* desktop viewport: style rules for main content */
+	main{
+		clear: left;
+		width: 100%;
+	}
+	main h1{
+		font-size: 1.8em;
+	}
+	
+}
+/*media query for large desktop viewport */
+
+@media screen and (min-width: 1921px){
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+/*media query for print */
+
+@media print{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
+}

@@ -1,0 +1,109 @@
+<!doctype html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+<title>Jonathan Oakes Project</title>
+</head>
+
+<body>
+	<div id="container">
+	<!-- the header area  -->
+	<header>
+	
+	<a href="index.html">
+		<picture>
+  <source media="(max-width: 629px)" srcset="images/1.png">
+  <source media="(min-width: 630px)" srcset="images/2.png">
+ <img src="images/logo.png" alt="jonathan oakes logo" id="MainImage" >
+</picture></a>
+	</header>
+	
+	<!--  the nav area -->
+		<nav>
+	<ul>
+	<li><a href="index.html">
+		Index</a></li>
+		<li><a href="accolades.html">
+			Accolades </a></li>
+		<li><a href="academicWork.html">
+			Academic Work </a> </li>
+		<li><a href="template.html">Goals</a>
+		<li><a href="contact.html">
+		Contact us</a></li>
+		<li><a href="works.html">
+			Works </a></li>
+			</li></ul>
+		</nav>
+		<!-- Hero Image-->
+		<div id="hero" class="tablet-desktop">
+		<img src="images/3.png" alt="hi professor nixon how are you">
+		</div>
+	<!-- the main area -->
+	<main id="main">
+		<div class="mobile" >
+			<h1>My name is Jonathan Oakes, and I am a website designer.</h1>
+			<p>I have spent most of my life living in the town of Canton, New York.  I first got my start as a coder when I took my first ever coding class in the sophomore year of my high school career.  During my junior year of high school I enrolled in BOCES, specifically in the class titled Software Development and Buisness Design.  I graduated from both BOCES and my high school on June of 2020.</p>
+			<p>As of the time of coding this website, I am a junior enrolled in SUNY Canton.  My current major is Graphic and Multimedia design, and I currently wish to gain a position in an advertising buisness once I graduate.
+</p>
+		
+		</div>
+		<div class="tablet-desktop">
+			<h1>My name is Jonathan Oakes, and I am a website designer.</h1>
+			<p>I have spent most of my life living in the town of Canton, New York.  I first got my start as a coder when I took my first ever coding class in the sophomore year of my high school career.  During my junior year of high school I enrolled in BOCES, specifically in the class titled Software Development and Buisness Design.  I graduated from both BOCES and my high school on June of 2020.</p>
+			<p>As of the time of coding this website, I am a senior enrolled in SUNY Canton.  My current major is Graphic and Multimedia design, and I currently wish to gain a position in an advertising buisness once I graduate.
+</p>
+			<p>Customize the color scheme of this page!</p>
+			
+			<script type="text/javascript">
+			function changecolor(){
+  let color = document.getElementById('colorpicker').value;
+  document.body.style.backgroundColor = color;
+  
+}
+				function changeStyle(){
+  let color = document.getElementById('changeStyle').value;
+  document.getElementById('main').style.backgroundColor = color;
+    }
+				function changeFeet(){
+  let color = document.getElementById('changeFeet').value;
+  document.getElementById('footer').style.backgroundColor = color;
+    }
+			</script>
+			<input id = "colorpicker" type = "color">
+  <button onclick = "changecolor();"> change Color </button> <br>
+																 
+	<input id = "changeStyle" type = "color">
+  <button onclick = "changeStyle();"> change Main </button><br>
+		
+			<input id = "changeFeet" type = "color">
+  <button onclick = "changeFeet();"> Change Footer </button>
+    
+		</div>
+	</main>
+	<!-- the footer area  -->
+	<footer id="footer">
+		<p>&copy; Copyright 2022. All Rights Reserved</p>
+		<p>All content in this site is from the creative mind of Jonathan C. Oakes-Bascom</p>
+	<nav>
+	<ul>
+	<li><a href="index.html">
+		Index</a></li>
+		<li><a href="accolades.html">
+			Accolades </a></li>
+		<li><a href="academicWork.html">
+			Academic Work </a> </li>
+		<li><a href="template.html">Goals</a>
+		<li><a href="contact.html">
+		Contact us</a></li>
+		<li><a href="works.html">
+			Works </a></li>
+			</li></ul>
+		</nav>
+	</footer>
+	</div>
+</body>
+
+</html>
